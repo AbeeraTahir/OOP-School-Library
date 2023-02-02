@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require_relative './app.rb'
+require_relative './app'
 
 class MenuClass
   def initialize
@@ -7,6 +7,7 @@ class MenuClass
     puts 'Welcome to School library App!'
     show_menu
   end
+
   def show_menu
     puts "\nPlease choose an option by entering the number:
       1- List all books
@@ -16,9 +17,10 @@ class MenuClass
       5- Create a rental
       6- List all rentals for a given person id
       7- Exit"
-      user_input = gets.chomp
-      select_option(user_input)
+    user_input = gets.chomp
+    select_option(user_input)
   end
+
   def select_option(user_input)
     menu_list = {
       '1' => :list_all_books,
@@ -44,4 +46,3 @@ def main
 end
 
 main
-  

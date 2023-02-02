@@ -1,7 +1,7 @@
-require_relative './student.rb'
-require_relative './teacher.rb'
-require_relative './book.rb'
-require_relative './rental.rb'
+require_relative './student'
+require_relative './teacher'
+require_relative './book'
+require_relative './rental'
 
 class App
   def initialize(menu)
@@ -24,7 +24,7 @@ class App
     if @people.empty?
       puts 'No added person!'
     else
-      @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"}
+      @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
     end
     @menu.show_menu
   end
@@ -69,6 +69,7 @@ class App
 
     @menu.show_menu
   end
+
   def create_book
     print 'Title: '
     title = gets.chomp
@@ -86,7 +87,9 @@ class App
     puts
 
     puts 'Select a person from the following list by number (not id)'
-    @people.each_with_index { |person, index| puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    @people.each_with_index do |person, index|
+      puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+    end
     person_number = gets.chomp.to_i
 
     print 'Date: '
@@ -96,13 +99,17 @@ class App
 
     @menu.show_menu
   end
+
   def list_all_rentals
     print 'ID of person: '
     id = gets.chomp.to_i
     puts 'Rentals:'
-    @rentals.each { |rental| puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == id }
+    @rentals.each do |rental|
+      puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == id
+    end
     @menu.show_menu
   end
+
   def exit
     puts 'Thank you for using the app!'
   end
