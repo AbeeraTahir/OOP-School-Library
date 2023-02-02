@@ -91,7 +91,7 @@ Install thr project dependencies with:
 To run the project, execute the following command:
 
 ```
-  ruby [file_name].rb
+  ruby main.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -112,7 +112,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add basic UI
+- Add tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
