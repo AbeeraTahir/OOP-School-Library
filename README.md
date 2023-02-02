@@ -91,7 +91,7 @@ Install thr project dependencies with:
 To run the project, execute the following command:
 
 ```
-  ruby [file_name].rb
+  ./main.rb
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
