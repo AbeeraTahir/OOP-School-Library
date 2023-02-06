@@ -1,13 +1,13 @@
 require_relative './people_options'
 require_relative './books_options'
-require_relative './rental_options.rb'
+require_relative './rental_options'
 
 class App
   def initialize(menu)
     @menu = menu
     @books_options = BooksOptions.new
     @people_options = PeopleOptions.new
-    @rental_options = RentalOptions.new(@books_options.books, @people_options.people)
+    @rental_options = RentalOptions.new(@books_options, @people_options)
   end
 
   def select_option(user_input)

@@ -8,6 +8,7 @@
 </div>
 
 # 📗 Table of Contents
+
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 OOP School Library ](#-oop-school-library-)
   - [🛠 Built With ](#-built-with-)
@@ -28,11 +29,13 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 OOP School Library <a name="oop-school-library"></a>
- Imagine that you are the librarian of _OOP University_, and you need a tool to record the data of books that are present in the library and who borrows them. The _**OOP School Library**_ app will help you to record the data. It is a **Ruby console app** that allows you to
+
+Imagine that you are the librarian of _OOP University_, and you need a tool to record the data of books that are present in the library and who borrows them. The _**OOP School Library**_ app will help you to record the data. It is a **Ruby console app** that allows you to
 
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -69,7 +72,8 @@
 In order to run this project you need:
 
 - [Ruby](https://www.ruby-lang.org/en/) installed and running.
-- You should be able to use [IRB](https://en.wikipedia.org/wiki/Ruby_(programming_language)#Features).
+- You should be able to use [IRB](<https://en.wikipedia.org/wiki/Ruby_(programming_language)#Features>).
+
 ### Setup
 
 Clone this repository to your desired folder:
@@ -105,6 +109,12 @@ To run the project, execute the following command:
 - GitHub: [@AbeeraTahir](https://github.com/AbeeraTahir)
 - Twitter: [@AbeeraTahir8](https://twitter.com/AbeeraTahir8?t=z5CjMpmHMZmS98i09gUpYA&s=08)
 - LinkedIn: [Abeera Tahir](https://www.linkedin.com/in/abeera-tahir/)
+
+👤 **Luis Muñoz**
+
+- GitHub: [@lmunozm1702](https://github.com/lmunozm1702)
+- Email: [l.munoz.m@outlook.com](mailto:l.munoz.m@outlook.com)
+- Twitter: [@lmunozm1702](www.twitter.com/lmunozm1702)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

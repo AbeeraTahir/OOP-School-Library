@@ -3,6 +3,7 @@ require_relative './teacher'
 
 class PeopleOptions
   attr_accessor :people
+
   def initialize
     @people = []
   end
@@ -12,6 +13,16 @@ class PeopleOptions
       puts 'No added person!'
     else
       @people.each { |person| puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+    end
+  end
+
+  def list_all_people_with_index
+    if @people.empty?
+      puts 'No added person!'
+    else
+      @people.each_with_index do |person, index|
+        puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      end
     end
   end
 
@@ -52,6 +63,5 @@ class PeopleOptions
     else
       puts 'Please add either 1 or 2!'
     end
-
   end
 end
