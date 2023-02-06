@@ -16,27 +16,8 @@ class MenuClass
       5- Create a rental
       6- List all rentals for a given person id
       7- Exit"
-    user_input = gets.chomp
-    select_option(user_input)
-  end
-
-  def select_option(user_input)
-    menu_list = {
-      '1' => :list_all_books,
-      '2' => :list_all_people,
-      '3' => :create_person,
-      '4' => :create_book,
-      '5' => :create_rental,
-      '6' => :list_all_rentals,
-      '7' => :exit
-    }
-    option = menu_list[user_input]
-    if option.nil?
-      puts 'Please select the number from the given list!'
-      show_menu
-    else
-      @app.send(option)
-    end
+    user_input = gets.chomp.to_i
+    @app.select_option(user_input)
   end
 end
 
