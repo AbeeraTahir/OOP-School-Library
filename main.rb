@@ -17,7 +17,12 @@ class MenuClass
       6- List all rentals for a given person id
       7- Exit"
     user_input = gets.chomp.to_i
-    @app.select_option(user_input)
+    if user_input == 7
+      puts 'Thank you for using the app!'
+      exit(true)
+    else
+      @app.select_option(user_input)
+    end
   end
 end
 

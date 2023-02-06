@@ -24,16 +24,9 @@ class App
       @rental_options.create_rental
     when 6
       @rental_options.list_all_rentals
-    when 7
-      exit_app
     else
       puts 'Please select the number from the given list!'
     end
     @menu.show_menu
-  end
-
-  def exit_app
-    puts 'Thank you for using the app!'
-    exit(true)
   end
 end
