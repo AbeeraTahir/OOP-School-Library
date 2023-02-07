@@ -1,4 +1,5 @@
 require_relative './app'
+require_relative './file_storage'
 
 class MenuClass
   def initialize
@@ -19,6 +20,9 @@ class MenuClass
     user_input = gets.chomp.to_i
     if user_input == 7
       puts 'Thank you for using the app!'
+      FileStorage.save_data('books', @app.books_options.books)
+      FileStorage.save_data('people', @app.people_options.people)
+      FileStorage.save_data('rentals', @app.rental_options.rentals)
       exit(true)
     else
       @app.select_option(user_input)
