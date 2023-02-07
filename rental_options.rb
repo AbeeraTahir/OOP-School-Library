@@ -18,10 +18,10 @@ class RentalOptions
     puts 'Select a person from the following list by number (not id)'
     @people_options.list_all_people_with_index
     person_number = gets.chomp.to_i
-
+    people_id = @people_options.get_person_id_by_index(person_number)
     print 'Date: '
     date = gets.chomp
-    @rentals.push(Rental.new(date, @books_options.books[book_number], @people_options.people[person_number]))
+    @rentals.push(Rental.new(date, @books_options.books[book_number], @people_options.people[person_number], people_id))
     puts 'Rental created successfully'
   end
 

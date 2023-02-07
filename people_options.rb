@@ -8,6 +8,10 @@ class PeopleOptions
     @people = []
   end
 
+  def get_person_id_by_index(person_number)
+    @people[person_number].id
+  end
+
   def list_all_people
     if @people.empty?
       puts 'No added person!'

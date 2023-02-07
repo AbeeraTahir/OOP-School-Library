@@ -1,1 +1,1 @@
-[{"json_class":"Rental","date":"2023/07/02","book":{"json_class":"Book","title":"lords","author":"tolkein"},"person":{"json_class":"Teacher","specialization":null,"age":45,"name":"Doctor","parent_permission":true}}]
+[{"json_class":"Rental","date":"0","book":{"json_class":"Book","title":"lords","author":"tolkein"},"person":{"json_class":"Student","classroom":"c1","age":17,"name":"Rose","parent_permission":false},"id":119}]
