@@ -13,4 +13,16 @@ class Book
     @rentals.push(rental)
     rental.book = self
   end
+
+  def to_json(*args)
+    {
+      JSON.create_id  => self.class.name,
+      'title'  => @title,
+      'author' => @author
+    }.to_json(*args)
+  end
+
+  def self.json_create(object)
+    new(object['title'], object['author'])
+  end
 end

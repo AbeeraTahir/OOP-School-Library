@@ -1,1 +1,1 @@
-["#<Book:0x00007f010fe8f348>","#<Book:0x00007f4ae26cef10>"]
+[{"json_class":"Book","title":"lords","author":"tolkein"},{"json_class":"Book","title":"book1","author":"author1"},{"json_class":"Book","title":"book2","author":"author2"}]
