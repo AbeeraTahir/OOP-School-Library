@@ -1,1 +1,0 @@
-[{"json_class":"Rental","date":"99","book":{"json_class":"Book","title":"lords","author":"tolkien"},"person":{"json_class":"Student","id":146,"classroom":"a1","age":10,"name":"lukas","parent_permission":false},"id":146}]

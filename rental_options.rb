@@ -26,11 +26,15 @@ class RentalOptions
   end
 
   def list_all_rentals
-    print 'ID of person: '
-    id = gets.chomp.to_i
-    puts 'Rentals:'
-    @rentals.each do |rental|
-      puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == id
+    if @rentals.empty?
+      puts 'No added rental!'
+    else
+      print 'ID of person: '
+      id = gets.chomp.to_i
+      puts 'Rentals:'
+      @rentals.each do |rental|
+        puts "Date: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == id
+      end
     end
   end
 end
