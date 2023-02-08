@@ -1,4 +1,5 @@
 require_relative './rental'
+require 'json'
 
 class Book
   attr_accessor :title, :author, :rentals
@@ -10,7 +11,7 @@ class Book
   end
 
   def add_rental(rental)
-    @rentals.push(rental)
+    @rentals.push(rental) unless @rentals.include?(rental)
     rental.book = self
   end
 
