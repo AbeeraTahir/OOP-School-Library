@@ -8,6 +8,10 @@ class PeopleOptions
     @people = []
   end
 
+  def get_person_id_by_index(person_number)
+    @people[person_number].id
+  end
+
   def list_all_people
     if @people.empty?
       puts 'No added person!'
@@ -35,7 +39,7 @@ class PeopleOptions
     parent_permission = gets.chomp.downcase == 'y'
     print 'Classroom: '
     classroom = gets.chomp
-    @people.push(Student.new(classroom, age, name: name, parent_permission: parent_permission))
+    @people.push(Student.new(nil, classroom, age, name, parent_permission))
     puts
     puts 'Person created successfuly'
   end
@@ -47,7 +51,7 @@ class PeopleOptions
     name = gets.chomp
     print 'Specialization: '
     specialization = gets.chomp
-    @people.push(Teacher.new(specialization, age, name: name))
+    @people.push(Teacher.new(nil, specialization, age, name))
     puts
     puts 'Person created successfuly'
   end
