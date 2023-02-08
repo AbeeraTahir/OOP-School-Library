@@ -1,12 +1,5 @@
 <a name="readme-top"></a></a>
 
-<div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
-
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
@@ -122,7 +115,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add tests
+- Add more tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
