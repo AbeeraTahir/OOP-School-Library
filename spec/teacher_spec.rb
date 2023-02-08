@@ -10,9 +10,8 @@ describe Teacher do
   it "can_use_services? should return true" do
     expect(@teacher.can_use_services?).to eql true
   end
-  # it "Student object to JSON" do
-  #   pp @student
-  #   json_object = @student.to_json
-  #   expect(json_object).to eql '{"json_class":"Student","id":10,"classroom":"class1","age":17,"name":"John","parent_permission":"n"}'
-  # end
+  it "Teacher object to json" do
+    teacher_json = @teacher.to_json
+    expect(teacher_json).to eql '{"json_class":"Teacher","id":10,"specialization":"time travel","age":40,"name":"Alex","parent_permission":"y"}'
+  end
 end

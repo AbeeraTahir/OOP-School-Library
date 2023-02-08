@@ -13,9 +13,8 @@ describe Student do
   it "Classroom should be 'class1'" do
     expect(@student.classroom).to eql 'class1'
   end
-  # it "Student object to JSON" do
-  #   pp @student
-  #   json_object = @student.to_json
-  #   expect(json_object).to eql '{"json_class":"Student","id":10,"classroom":"class1","age":17,"name":"John","parent_permission":"n"}'
-  # end
+  it "Student object to json" do
+    student_json = @student.to_json
+    expect(student_json).to eql '{"json_class":"Student","id":10,"classroom":"class1","age":17,"name":"John","parent_permission":"n"}'
+  end
 end
